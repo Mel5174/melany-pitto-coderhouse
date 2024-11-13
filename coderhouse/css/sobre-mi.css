@@ -1,0 +1,287 @@
+body {
+    color: rgb(40, 40, 40);      
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;}
+
+    .flex-menu {
+        display: flex;                 
+        flex-direction: column;       
+        list-style: none;             
+        padding: 0px;                   
+        margin-top: 0px;    
+        margin-right: 0px;           
+        width: 200px;                 
+        background-color: #FFF6FE;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        box-shadow: 2px 0 5px #dddcdc80;              
+    }
+    
+    /* Estilo para cada elemento del menú */
+    .flex-menu li {
+        margin: 10px 0;              
+    }
+    
+    /* Estilo para los enlaces del menú */
+    .flex-menu a {
+        color: black;                 
+        text-decoration: none;        
+        padding: 10px 15px;          
+        border-radius: 5px;          
+        transition: background-color 0.3s; 
+        display: block;              
+    }
+    
+    /* Efecto hover para los enlaces del menú */
+    .flex-menu a:hover {
+        background-color: #CB72B0;    
+    }
+    
+    .menu-central {
+        padding-top: 0.5rem;
+    }
+    
+    .menu-bajo {
+        padding-top: 18rem;
+}
+
+
+/* Estilo de los textos */
+.melany, .pitto, .puesto {
+    margin: 0rem;                    
+    padding-left: 15rem;
+    padding-bottom: 0rem;
+    
+}
+
+.melany {
+    font-size: 96px;              
+    font-weight: bold;
+    
+}
+
+
+.pitto{
+    font-size: 96px;
+    margin-top: -6rem;
+    font-weight: 100;
+}
+
+.puesto {
+    font-size: 20px;              
+    color: black;
+    margin-top: -5rem;
+    font-weight: lighter;
+    padding-left: 16rem;
+}
+
+.parrafo {
+    padding-left: 16rem;
+
+}
+.texto h5{
+    text-decoration: underline;
+    padding-left: 15rem;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0rem; 
+    padding-left: 8rem;
+    margin-left: 10rem; 
+    font-weight: normal;
+    margin-top: 3.125rem; 
+}
+
+footer a {
+    color: #054465; 
+    font-size: 12px; 
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #6c93a7; 
+}
+
+
+/*ocultar iconos del menu en escritorio*/
+.flex-menu a span {
+    display: none;  
+}
+
+
+
+.flex-menu a {
+    padding: 1rem; 
+}
+
+.flex-menu a span:nth-child(2) {
+    display: inline;  
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    /* Estilos generales del body */
+    body {
+        color: #282828;
+        font-family: "Montserrat", sans-serif;
+        margin: 0; 
+        padding: 0; 
+        overflow-x: hidden; 
+        font-size: 16px;
+    }
+
+
+
+    /* Estilo del menú */
+    .flex-menu {
+        width: 7%;                    
+        height: auto;                   
+        display: flex;                  
+        flex-direction: column;         
+        justify-content: flex-start;    
+        padding: 1rem;                  
+        position: fixed;                
+        top: 0;                         
+        left: 0;                        
+        background-color: #FFF6FE;     
+        height: 100vh;                  
+        box-shadow: 2px 0 5px #dddcdc80; 
+        
+    }
+
+    .menu-inicio {
+        font-size: 10px;
+    }
+
+    .menu-central {
+        font-size: 10px;
+        padding-top: -3rem;
+    }
+    
+    .menu-bajo {
+        font-size: 10px;
+        padding-top: 18rem;
+    }
+
+    /* MENU: Ocultar texto en dispositivos móviles */
+
+
+
+.flex-menu a span {
+    display: inline; /* Mostrar solo el icono */
+}
+
+.flex-menu a {
+    justify-content: center; 
+    padding: 10px; 
+}
+
+.flex-menu a {
+    display: flex;  
+    align-items: center;  
+}
+.flex-menu a span {
+    display: inline;  
+}
+
+.flex-menu a {
+    justify-content: center; 
+    color: #4e4e4e;
+
+}
+
+
+
+.flex-menu a {
+    padding: 10px; 
+}
+
+.flex-menu a span:nth-child(2) {
+    display: none;  
+}
+
+/* Contenido principal */
+.contenedor-texto-imagen {
+    margin-left: 5rem; 
+    padding: 1rem; 
+}
+
+.texto h2,
+.texto h1,
+.texto h3,
+.texto p {
+    margin-bottom: 1rem; 
+}
+
+.melany, .pitto, .puesto {
+    margin: 0rem;                    
+    padding-left: 1rem;
+    padding-bottom: 0rem;
+    
+}
+
+.melany {
+    font-size: 45px;              
+    font-weight: bold;
+    padding-bottom: 0rem;
+
+}
+
+
+.pitto{
+    font-size: 45px;
+    margin-top: -3rem;
+    font-weight: 100;
+}
+
+.puesto {
+    font-size: 15px;              
+    color: black;
+    margin-top: 1rem;
+    font-weight: lighter;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+.puesto, .parrafo {
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+
+
+}
+
+.parrafo{
+    margin-left: 0.5rem;
+    font-size: 15px;
+}
+
+.texto h5{
+    text-decoration: underline;
+    padding: 0;
+}
+
+ /* Estilos para el footer */
+ footer {
+    display: flex;
+    margin-top: 1rem;           
+    margin-right: 1rem;
+    font-weight: normal;
+    padding: 1rem 0;
+    justify-content: center;      
+}
+
+footer a {
+    color: #054465;                
+    font-size: 12px;               
+    text-decoration: none;          
+}
+}

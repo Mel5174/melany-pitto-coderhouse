@@ -1,0 +1,429 @@
+body {
+    color: #282828;      
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;}
+
+
+/*MENU*/
+.menu {
+    background-color: #FFF6FE; 
+    display: inline-block; 
+    padding: 0.5rem 1rem; 
+    box-shadow: 2px 0 5px #dddcdc80;     
+    font-weight: bold;  
+    color: black;   
+    position: absolute; 
+    top: 1rem; 
+    left: 1rem; 
+    
+}
+
+.menu a {
+    color: black; 
+    text-decoration: none; 
+}
+
+.menu a:hover {
+    color: #FFF6FE; 
+    background-color: #CB72B0; 
+}
+
+.flex-menu a span {
+    display: none; /* Mostrar solo el icono */
+}
+
+/*TITULO: TRABAJOS*/
+.titulo-principal {
+font-size: 150px; 
+margin: 0; 
+ color: #ffffff;
+ text-shadow: 
+    0 0 5px #CB72B0,  /* Primer nivel de resplandor */
+    0 0 10px #CB72B0, 
+    0 0 15px #CB72B0, 
+    0 0 20px #CB72B0, /* Segundo nivel de resplandor más intenso */
+    0 0 25px #CB72B0,
+    0 0 35px #a54689;
+}
+
+.puesto {
+    font-weight: normal;
+    margin: 0; 
+}
+
+header nav {
+    display: flex;               
+    flex-direction: column;      
+    align-items: center;        
+    text-align: center;         
+    position: relative;         
+}
+
+.portada {
+    background-color: #FFF6FE;
+    padding: 30rem; 
+}
+
+/*VINCULAPP*/
+
+.equipo, .equipo-vinculapp {
+    font-size: 20px; 
+    padding: 1rem; 
+    border-radius: 25px; 
+    border: 2px solid #CB72B0; 
+
+}
+
+
+.linea {
+    flex-grow: 1; 
+    height: 2px; 
+    background-color: #CB72B0; 
+    margin: 0 10px; 
+}
+
+/* Ajuste del contenedor y espaciado del título de Vinculapp */
+.contenedor1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: -5rem; /* Espacio entre contenedor y título */
+}
+
+.numero-uno {
+    font-size: 150px;
+    font-weight: bold;
+    color: #ffffff; 
+    -webkit-text-stroke: 1px #303030; 
+    position: relative;
+    margin-bottom: 5rem;}
+
+.titulo-container-vinculapp {
+    display: flex; 
+    align-items: center; 
+    gap: 1rem;
+    margin-bottom: -1.5rem;}
+
+.titulo-vinculapp {
+    font-size: 64px; 
+    position: absolute; 
+    margin-top: 11.5rem; 
+    padding-left: 5rem; /* Mantiene el padding izquierdo */
+}
+
+.proyecto1 {
+font-size: 24px;
+margin-top: -1rem;
+margin-bottom: 0rem;
+}
+
+/*TOMASSA*/
+
+
+.individual, .tomassa{
+font-size: 20px; 
+padding: 1rem; 
+border-radius: 25px; 
+border: 2px solid #22695b; 
+}
+
+
+.linea2 {
+flex-grow: 1; 
+height: 2px; 
+background-color: #22695b; 
+margin: 0 10px; 
+}
+
+.contenedor2 {
+display: flex;
+align-items: center;
+gap: 1rem;
+margin-bottom: -2rem; /* Espacio entre contenedor y título */
+}
+
+.numero-dos {
+font-size: 150px;
+font-weight: bold;
+color: #ffffff; 
+-webkit-text-stroke: 1px #303030; 
+position: relative;
+margin-bottom: 5rem;}
+
+.contenedor2 {
+display: flex; 
+align-items: center; 
+gap: 1rem;
+margin-bottom: -1.5rem;}
+
+.titulo-tomassa {
+font-size: 64px; 
+position: absolute; 
+margin-top: -11.11rem; 
+padding-left: 5rem; 
+}
+
+.proyecto1 {
+    font-size: 24px;
+    margin-top: -1rem;
+    margin-bottom: 0rem;
+    }
+
+
+.seccion-tomassa, footer {
+    margin-bottom: 30rem;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+
+.gracias {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0; 
+    margin-bottom: -5rem;
+
+}
+
+.contacto {
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 0.1rem; 
+
+}
+
+.redes {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem; 
+}
+
+footer a {
+    color: #054465;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #6c93a7;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    /* Estilos generales del body */
+    body {
+        color: #282828;
+        font-family: "Montserrat", sans-serif;
+        margin: 0; 
+        padding: 0; 
+        overflow-x: hidden; 
+        font-size: 16px;
+    }
+
+/*ocultar iconos del menu en escritorio*/
+.flex-menu a span {
+    display: inline; /* Mostrar solo el icono */
+}
+
+/*TITULO: TRABAJOS*/
+.titulo-principal {
+    font-size: 55px; 
+    margin: 0; 
+     color: #ffffff;
+     text-shadow: 
+        0 0 5px #CB72B0,  /* Primer nivel de resplandor */
+        0 0 10px #CB72B0, 
+        0 0 15px #CB72B0, 
+        0 0 20px #CB72B0, /* Segundo nivel de resplandor más intenso */
+        0 0 25px #CB72B0,
+        0 0 35px #a54689;
+    }
+    
+    .puesto {
+        font-weight: normal;
+        margin: 0; 
+    }
+    
+    header nav {
+        display: flex;               
+        flex-direction: column;      
+        align-items: center;        
+        text-align: center;         
+        position: relative;         
+    }
+    
+    .portada {
+        background-color: #FFF6FE;
+        padding: 20rem; 
+    }
+    
+    /*VINCULAPP*/
+    
+    .equipo, .equipo-vinculapp {
+        font-size: 20px; 
+        padding: 1rem; 
+        border-radius: 25px; 
+        border: 2px solid #CB72B0; 
+    
+    }
+    
+    .linea {
+    display: none;
+    }
+    
+    /* Ajuste del contenedor y espaciado del título de Vinculapp */
+    .contenedor1 {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: -5rem; /* Espacio entre contenedor y título */
+    }
+    
+    .numero-uno {
+        font-size: 110px;
+        font-weight: bold;
+        color: #ffffff; 
+        -webkit-text-stroke: 1px #303030; 
+        position: relative;
+        margin-bottom: 1rem;}
+
+    .parrafo1 {
+    width: 90%;
+     font-size: 15px;
+     padding-left: 1rem;
+    }
+    
+    .titulo-container-vinculapp {
+        display: flex; 
+        align-items: center; 
+        gap: 1rem;
+        margin-bottom: -1.5rem;
+    }
+    
+    .titulo-vinculapp {
+        font-size: 45px; 
+        position: absolute; 
+        margin-top: 11.5rem; 
+        padding-left: 4rem; /* Mantiene el padding izquierdo */
+    }
+    
+    .proyecto1 {
+    font-size: 15px;
+    margin-top: -1rem;
+    margin-bottom: 0rem;
+    padding-left: 1rem;
+
+    }
+    
+    /*TOMASSA*/
+    
+    
+    .individual{
+    font-size: 20px; 
+    padding: 1rem; 
+    border-radius: 25px; 
+    border: 2px solid #22695b; 
+    }
+    
+    .linea2 {
+        display: none;
+    }
+    
+    .contenedor2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 15px;
+    margin-bottom: -2rem; /* Espacio entre contenedor y título */
+    }
+    
+    .numero-dos {
+    font-size: 110px;
+    font-weight: bold;
+    color: #ffffff; 
+    -webkit-text-stroke: 1px #303030; 
+    position: relative;
+    margin-bottom: 5rem;}
+    
+    .contenedor2 {
+    display: flex; 
+    align-items: center; 
+    gap: 1rem;
+    margin-bottom: -1.5rem;}
+    
+    .titulo-tomassa {
+    font-size: 45px; 
+    position: absolute; 
+    margin-top: -9.5rem; 
+    padding-left: 5rem; 
+    }
+    
+    .parrafo2 {
+        width: 90%;
+        padding-left: 1rem;
+        font-size: 15px;
+     }
+
+    .proyecto2 {
+        font-size: 24px;
+        margin-top: -1rem;
+        margin-bottom: 0rem;
+        padding-left: 1rem;
+        }
+    
+    
+    .seccion-tomassa, footer {
+        margin-bottom: 30rem;
+    }
+    
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    
+    
+    .gracias {
+        font-size: 45px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0; 
+        margin-bottom: -4rem;
+    
+    }
+    
+    .contacto {
+        font-size: 15px;
+        font-weight: lighter;
+        text-align: center;
+        margin-top: 0.1rem; 
+    
+    }
+    
+    .redes {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem; 
+    }
+    
+    footer a {
+        color: #054465;
+        font-size: 11px;
+        text-decoration: none;
+    }
+    
+    footer a:hover {
+        color: #6c93a7;
+    }

@@ -1,0 +1,302 @@
+body {
+    color: #282828;      
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    background-color: #FFF6FE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    box-shadow: 2px 0 5px #dddcdc80;
+}
+
+/* Estilo para cada elemento del menú */
+.menu li {
+    margin: 10px 0;
+}
+
+/* Estilo para los enlaces del menú */
+.menu a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+/* Efecto hover para los enlaces del menú */
+.menu a:hover {
+    background-color: #CB72B0;
+}
+
+.menu-central {
+    padding-top: 0.5rem;
+}
+
+.menu-bajo {
+    padding-top: 18rem;
+}
+
+/*ocultar iconos del menu en escritorio*/
+.flex-menu a span {
+    display: none;  
+}
+
+
+.flex-menu a {
+    padding: 1rem; 
+}
+
+
+.flex-menu a span:nth-child(2) {
+    display: inline;  /*DUDA ESTA PARTE LA SAQUE DE CHAT GPT, ME SIRVIO PERO NO ENTENDI PORQUE, LA BORRO Y ME VUELVEN LOS ICONOS... */
+}
+
+
+.contenedor-principal-habilidades,
+main {
+    margin-left: 13.75rem;
+    padding: 1.25rem;
+}
+
+.contenedor-principal-habilidades h1 {
+    margin-top: 1.25rem; 
+    margin-bottom: 0.625rem;
+}
+
+
+
+
+.habilidades {
+    font-size: 96px;
+}
+
+.parrafo-habilidades {
+display: none;
+}
+
+main {
+    padding-bottom: 82rem;
+}
+
+main {
+    padding-bottom: 2rem;             /*DUDA: porqué poniendo así me permite que el footer no se vea tan abajo; si lo borro se va muy abajo y yo no quiero que haya tanto espacio en blanco entre el texto y el footer (almenos en este caso)*/
+}
+
+footer {
+    margin-left: 80rem;
+    padding: 1rem; 
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+
+footer a {
+    color: #054465;                
+    font-size: 12px;               
+}
+
+footer a:hover {
+    color: #6c93a7;                
+}
+
+.footer {
+    padding-left: 13rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.footer a{
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+
+
+@media (max-width: 768px) { /*MOVIL*/
+    /* Estilos generales del body */
+    body {
+        color: #282828;
+        font-family: "Montserrat", sans-serif;
+        margin: 0; 
+        padding: 0; 
+        overflow-x: hidden; 
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* MENU (MOVIL) */
+    .flex-menu {
+        width: 7%;                    /* Ancho completo para el menú */
+        height: auto;                   /* Altura automática */
+        display: flex;                  /* Utiliza flexbox para alinear los elementos del menú */
+        flex-direction: column;         /* Coloca los elementos del menú en columna */
+        justify-content: flex-start;    /* Alinea los elementos al principio */
+        padding: 1rem;                  /* Espacio interno para el menú */
+        position: fixed;                /* Fija el menú */
+        top: 0;                         /* Posiciona el menú en la parte superior */
+        left: 0;                        /* Coloca el menú al lado izquierdo */
+        background-color: #FFF6FE;     /* Fondo del menú */
+        height: 100vh;                  /* Altura completa de la ventana */
+        box-shadow: 2px 0 5px #dddcdc80; /* Sombra del menú */
+       
+    }
+
+/*PARTES DEL MENU*/
+
+    .menu-inicio {
+        font-size: 10px;
+    }
+
+
+    .menu-central {
+        font-size: 10px;
+        padding-top: 2rem;
+    }
+   
+    .menu-bajo {
+        font-size: 10px;
+        padding-top: 21rem;
+    }
+
+
+    /* MENU: Ocultar texto en dispositivos móviles */
+
+.menu-central {
+    padding-top: 0.5rem;
+}
+
+
+.menu-bajo {
+    padding-top: 18rem;
+}
+
+
+.flex-menu a span {
+    display: inline; /* Mostrar solo el icono */
+}
+
+
+.flex-menu a {
+    justify-content: center; /* Centra los íconos en móvil */
+    padding: 10px; /* Ajustar el padding si es necesario */
+}
+
+/*DUDA: LOS ESPACIOS COMO EL PADDING ENTRE OTROS ES MEJOR MEDIRLOS EN PX O EN REM...ME DIJERON QUE EN REM PERO AVECES ME OLVIDO Y LO PONGO EN PX, TIENE MUCHA DIFERENCIA ? O SE PUEDE MEZCLAR?*/
+
+.flex-menu a {
+    display: flex;  /* Utiliza flexbox para alinear íconos y texto */
+    align-items: center;  /* Centra verticalmente el contenido */
+}
+.flex-menu a span {
+    display: inline;  /* Muestra los íconos */
+}
+
+
+.flex-menu a {
+    justify-content: center; /* Centra los íconos */
+    color: #4e4e4e;
+
+
+}
+
+
+.flex-menu a {
+    padding: 10px; /* Ajusta el padding si es necesario */
+}
+
+
+.flex-menu a span:nth-child(2) {
+    display: none;  /* Oculta el texto */
+}
+
+
+/*CONTENDIO-TEXTO*/
+.contenedor-principal-habilidades,
+main {
+    margin-left: 3rem;
+    padding-left: 2rem;
+}
+
+.contenedor-principal-habilidades h1 {
+    margin-top: 2rem; 
+    margin-bottom: 0.625rem;
+}
+
+
+
+.habilidades {
+    font-size: 40px;
+}
+
+.parrafo-habilidades {
+display: none;
+}
+
+
+main h2 {
+font-size: 15px;
+}
+
+main li {
+    font-size: 12px;
+}
+
+
+/*FOOTER*/
+footer {
+    margin-left: 10rem;
+    padding: 1rem; 
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+
+footer a {
+    color: #054465;                
+    font-size: 12px;               
+}
+
+footer a:hover {
+    color: #6c93a7;                
+}
+
+.footer {
+    padding-left: 13rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.footer a{
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+
+/*DUDA: INTENTE HACER UN CSS APARTE DEL MENU Y UN CSS APARTE PARA EL FOOTER Y QUE ESTOS SE APLIQUEN EN TODOS LOS HTML*/
+/*COSA DE TANTO EL MENU  COMO EL FOOTER, LO MODIFIEQUE EN 1 CSS Y NO TENGA QUE COPIAR Y PEGAR ENTRE TODOS LOS CSS*/
+/*PARA QUE TODOS TENGA LA MISMA UBICACION, ETSTILO, ETC EN TODAS LAS PAGINAS*/
+/*NO ME SALIO Y NOSE PORQUE, MI PAREJA (PROGRAMADOR) INTENTO DARME UNA MANO PERO DIJO QUE ALGO ESTOY PONIENDO MAL*/
+/*O PONIENDO DE MAS, LA COSA ES QUE LO HICE ASI, CADA PAGINA CON SU CSS Y CADA UNA CON EL MENU Y EL FOOTER EDITADO*/
+/*PARA CADA PAGINA;¿LO DEJO ASI Y PARA LA PROXIMA TRABAJO DE ESTA FORMA DESDE 0?¿O LO INTENTO APLICAR ASI?*/
+/*COMO SE ME DEFORMABA LA PAGINA INTENTANDOLO DE ESA FORMA NO QUISE TIRAR A LA BASURA TRABAJO QUE YA HICE...*/
+
+/*TAMBIEN MI PAREJA LE DIO UNA LEIDA RAPIDA A LOS CODIGOS Y ME HIZO UN PAR DE CORRECCIONES PERO AL INTENTAR*/
+/*CORREGIRLO ALGO SE ROMPE.. O EL MENU, O EL CONTENIDO, TAMBIEN ME CORRIGIO QUE USO MUCHAS ETIQUETAS O ALGO ASI*/
+/*ME DIJO Y VIENDOLO Y ANALISANDOLO PUEDE SER; PERO CUANDO LO INTENTO REDUCIR O CORREGIR O ALGO, COMO YA DIJE*/
+/*ALGO SE ROMPE...*/

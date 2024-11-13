@@ -1,0 +1,330 @@
+/* Estilo del cuerpo */
+body {
+    color: rgb(40, 40, 40);      
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal; 
+    font-style: normal;
+}
+
+/*////////GRID LAYOUT - GRID AREA////////*/
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*"dos columnas iguales"*/
+    grid-template-rows: repeat(4, 20rem); /*se puede poner "auto" para que sea automatico (determinado automaticamente por contenido*/
+    gap: 1.25rem; 
+    padding: 1.25rem;
+  }
+
+  
+  article {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.375rem #0000001a; 
+  }
+  
+  h2 {
+    font-size: 25px;
+    margin-bottom: 0.625rem;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+  }
+
+  /*fin del GRID/main/*/
+
+
+/* Estilo del menú */
+.menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    background-color: #FFF6FE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    box-shadow: 2px 0 5px #dddcdc80;
+}
+
+/* Estilo para cada elemento del menú */
+.menu li {
+    margin: 10px 0;
+}
+
+/* Estilo para los enlaces del menú */
+.menu a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+/* Efecto hover para los enlaces del menú */
+.menu a:hover {
+    background-color: #CB72B0;
+}
+
+.menu-central {
+    padding-top: 0.5rem;
+}
+
+.menu-bajo {
+    padding-top: 18rem;
+}
+
+.presentacion {
+    margin-left: 15rem;
+}
+
+h1 {
+    font-size: 96px;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo del párrafo de presentación */
+.presentacion p {
+    font-size: 20px; 
+    line-height: 1.5; 
+    margin-top: 0;
+    
+}
+
+/* Estilo del main */
+main {
+    margin-left: 15rem;
+}
+
+
+
+/* Estilos para el contenedor del footer */
+.footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 5rem; 
+    margin-right: 55rem;
+}
+
+/* Estilos para los enlaces en el footer */
+.footer a {
+    color: #054465;
+    font-size: 12px;
+    margin-right: 1rem; 
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #6c93a7;
+}
+
+/*ocultar iconos del menu en escritorio*/
+.flex-menu a span {
+    display: none;  /* Oculta los íconos */
+}
+
+
+.flex-menu a {
+    padding: 1rem; /* Ajusta el padding si es necesario */
+}
+
+
+.flex-menu a span:nth-child(2) {
+    display: inline;  /* Muestra el texto */
+}
+
+@media (max-width: 768px) {
+    /* Estilos generales del body */
+    body {
+        color: #282828;
+        font-family: "Montserrat", sans-serif;
+        margin: 0; 
+        padding: 0; 
+        overflow-x: hidden; 
+        font-size: 16px;
+        padding: 10px;
+    }
+
+     /* Estilo del menú */
+     .flex-menu {
+        width: 7%;                    
+        height: auto;                   
+        display: flex;                  
+        flex-direction: column;         
+        justify-content: flex-start;    
+        padding: 1rem;                 
+        position: fixed;                
+        top: 0;                         
+        left: 0;                        
+        background-color: #FFF6FE;    
+        height: 100vh;                  
+        box-shadow: 2px 0 5px #dddcdc80; 
+       
+    }
+
+
+    .menu-inicio {
+        font-size: 10px;
+    }
+
+
+    .menu-central {
+        font-size: 10px;
+        padding-top: 2rem;
+    }
+   
+    .menu-bajo {
+        font-size: 10px;
+        padding-top: 21rem;
+    }
+
+
+    /* MENU: Ocultar texto en dispositivos móviles */
+
+.menu-central {
+    padding-top: 0.5rem;
+}
+
+
+.menu-bajo {
+    padding-top: 18rem;
+}
+
+
+.flex-menu a span {
+    display: inline; /* Mostrar solo el icono */
+}
+
+
+.flex-menu a {
+    justify-content: center; 
+    padding: 10px; 
+}
+
+
+.flex-menu a {
+    display: flex;  
+    align-items: center;  
+}
+.flex-menu a span {
+    display: inline;  /* Muestra los íconos */
+}
+
+
+.flex-menu a {
+    justify-content: center; 
+    color: #4e4e4e;
+
+
+}
+
+
+.flex-menu a {
+    padding: 10px; 
+}
+
+
+.flex-menu a span:nth-child(2) {
+    display: none;  /* Oculta el texto */
+}
+
+/*BORRAR PRESENTACION*/
+.presentacion {
+    margin-left: 7rem;
+}
+
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 1rem;
+}
+
+/* Estilo del párrafo de presentación */
+.presentacion p {
+display: none;
+}
+
+/* Estilo del main */
+main {
+    margin-left: 7rem;
+}
+
+/*footer */
+footer {
+    gap: 1rem;                    
+    margin-top: 1rem;             
+    font-weight: normal;
+}
+
+footer a {
+    color: #054465;               
+    font-size: 12px;               
+}
+
+
+.footer {
+    padding-left: 15rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.footer a {
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+
+
+/*////////GRID LAYOUT - GRID AREA////////*/
+main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /*"dos columnas iguales"*/
+    grid-template-rows: repeat(4, 22rem); /*se puede poner "auto" para que sea automatico (determinado automaticamente por contenido*/
+    margin: 4rem;
+    margin-top: 6.5rem;    
+    padding: 0.5rem;
+    gap: 1rem; /* Ajusta el espacio entre los artículos */
+
+}
+
+
+  
+  article {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.375rem #0000001a; 
+    width: 15rem ;
+    height: 14rem ;
+  }
+  
+header h1{
+padding-top: 1rem;
+font-size: 35px;
+margin-bottom: -3rem;
+margin-left: -2rem;
+}
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  p {
+    font-size: 10px;
+    line-height: 1.5;
+    color: #666;
+  }
+
+  /*fin del GRID/main/*/
